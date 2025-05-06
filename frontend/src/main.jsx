@@ -13,7 +13,7 @@ function App() {
     setChat(newChat);
     setMessage("");
 
-    const res = await fetch('https://nagorik-backend.onrender.com/chat', {
+    const res = await fetch('https://nagorik-ai.onrender.com/chat', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ message, mode })
